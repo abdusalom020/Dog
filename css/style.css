@@ -70,13 +70,12 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: var(--main-font);
+  font-family: var(--std-poppins);
   font-weight: normal;
   font-size: 15px;
   line-height: 25px;
   background-color: #fff;
   color: var(--text-color);
-  margin-top: 100px;
   overflow-x: hidden;
 }
 
@@ -98,9 +97,100 @@ img {
 
 /* CONTAINER */
 .container {
-  max-width: 1160px;
+  max-width: 1190px;
   padding-left: 25px;
   padding-right: 25px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.qualitys__section {
+  display: block;
+  padding-top: 159px;
+  padding-bottom: 118px;
+}
+
+.qualitys__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.qualitys__item {
+  position: relative;
+  z-index: 1;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 310px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 40px 25px 18px;
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.1);
+}
+
+.qualitys__item::before{
+  position: absolute;
+  top: -27px;
+  left: 40%;
+  z-index: 3;
+  display: block;
+  width: 63px;
+  height: 54px;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.qualitys__item:last-child{
+  margin-right: 0;
+}
+
+.quality__heading {
+  margin: 0;
+  font-family: var(--std-poppins);
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 37px;
+  text-align: center;
+  color: var(--std-txt-color);
+  margin-bottom: 11px;
+}
+
+.quality__text {
+  margin: 0;
+  font-family: var(--std-roboto);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: rgb(23, 12, 4, 0.6);
+  margin-bottom: 24px;
+}
+
+.quality__link {
+  text-decoration: none;
+  font-family: var(--std-roboto);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--std-btn-color);
+  text-transform: capitalize;
+}
+
+.qualitys1::before {
+  background-image: url(../img/quality1.png);
+  content: "";
+}
+
+.qualitys2::before {
+  background-image: url(../img/quality2.png);
+  content: "";
+}
+
+.qualitys3::before {
+  background-image: url(../img/quality3.png);
+  content: "";
 }
