@@ -1,0 +1,106 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url('../font/Poppins-Regular.woff2') format('woff2'),
+      url('../font/Poppins-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../font/Poppins-Bold.woff2') format('woff2'),
+      url('../font/Poppins-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../font/Roboto-Regular.woff2') format('woff2'),
+      url('../font/Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../font/Roboto-Bold.woff2') format('woff2'),
+      url('../font/Roboto-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root{
+  --std-roboto: 'Roboto', sans-serif;
+  --std-poppins: 'Poppins', sans-serif;
+  --std-btn-color: #E27B3A;
+  --std-link-color: rgba(226, 123, 58, 1);
+  --std-card-color: #FCF2EB;
+  --std-headeing-color: rgba(23, 12, 4, 1);
+  --std-txt-color: #170C04;
+  --std-border-style: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+  list-style: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: var(--main-font);
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  background-color: #fff;
+  color: var(--text-color);
+  margin-top: 100px;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1160px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
